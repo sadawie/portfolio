@@ -144,6 +144,7 @@ section {
 .about-content {
     max-width: 1200px;
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -152,11 +153,15 @@ section {
 
 .about-text {
     font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .about-text p {
     margin-bottom: 1.5rem;
 }
+
 
 .about-stats {
     display: flex;
