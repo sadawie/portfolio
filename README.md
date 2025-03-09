@@ -8,7 +8,6 @@ A modern, responsive portfolio website template built with HTML, CSS, and JavaSc
 - 🎨 Modern and Clean Interface
 - 🌟 Smooth Animations
 - 📊 Skills Showcase
-- 💼 Project Portfolio
 - 📝 About Me Section
 - 📱 Contact Information
 - 🍔 Mobile-friendly Navigation
