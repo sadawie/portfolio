@@ -141,6 +141,7 @@ function initSkills() {
                 modalContent.style.top = `${top}px`;
                 modalContent.style.left = `${left}px`;
                 modalContent.style.transform = 'translateX(-50%)';
+
                 
                 modal.style.display = 'block';
             }

@@ -525,6 +525,7 @@ section {
 }
 
 .modal-content {
+
     position: absolute;
     background-color: var(--background);
     padding: 2rem;
@@ -534,6 +535,7 @@ section {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     animation: modalFadeIn 0.3s ease-out;
     margin: 0;
+
 }
 
 @keyframes modalFadeIn {
