@@ -95,7 +95,7 @@ function initSkills() {
     const skillItems = document.querySelectorAll('.skill-item');
 
     skillItems.forEach(item => {
-        item.addEventListener('click', () => {
+        item.addEventListener('click', (e) => {
             const skillName = item.querySelector('span').textContent;
             const skillData = skillsData[skillName];
             
@@ -112,6 +112,35 @@ function initSkills() {
                     serviceItem.textContent = service;
                     servicesGrid.appendChild(serviceItem);
                 });
+
+                // Get the clicked item's position
+                const rect = item.getBoundingClientRect();
+                const modalContent = modal.querySelector('.modal-content');
+                
+                // Calculate the position to center the modal near the clicked item
+                let top = rect.top;
+                let left = rect.left + rect.width / 2;
+                
+                // Ensure the modal stays within viewport
+                const modalHeight = modalContent.offsetHeight;
+                const modalWidth = modalContent.offsetWidth;
+                const viewportHeight = window.innerHeight;
+                const viewportWidth = window.innerWidth;
+                
+                // Adjust vertical position if modal would go off screen
+                if (top + modalHeight > viewportHeight) {
+                    top = viewportHeight - modalHeight - 20; // 20px padding from bottom
+                }
+                
+                // Adjust horizontal position if modal would go off screen
+                if (left + modalWidth > viewportWidth) {
+                    left = viewportWidth - modalWidth - 20; // 20px padding from right
+                }
+                
+                // Apply the calculated position
+                modalContent.style.top = `${top}px`;
+                modalContent.style.left = `${left}px`;
+                modalContent.style.transform = 'translateX(-50%)';
                 
                 modal.style.display = 'block';
             }
@@ -126,6 +155,13 @@ function initSkills() {
     // Close modal when clicking outside
     window.addEventListener('click', (e) => {
         if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        if (modal.style.display === 'block') {
             modal.style.display = 'none';
         }
     });
