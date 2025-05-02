@@ -4,13 +4,13 @@ A modern, responsive portfolio website template built with HTML, CSS, and JavaSc
 
 ## Features
 
-- 📱 Fully Responsive Design
-- 🎨 Modern and Clean Interface
-- 🌟 Smooth Animations
-- 📊 Skills Showcase
-- 📝 About Me Section
-- 📱 Contact Information
-- 🍔 Mobile-friendly Navigation
+- Fully Responsive Design
+-  Modern and Clean Interface
+-  Smooth Animations
+- Skills Showcase
+- About Me Section
+- Contact Information
+- Mobile-friendly Navigation
 
 
 ## Local Development
