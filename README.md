@@ -29,6 +29,3 @@ Feel free to fork this project and customize it for your own use. If you find an
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
-
-Made with ❤️ by Akram Adam 
