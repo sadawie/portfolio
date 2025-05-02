@@ -278,6 +278,13 @@ section {
     gap: 1.5rem;
 }
 
+/* Adjust grid for sections with fewer items */
+.skill-category:nth-last-child(1) .skill-items {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 .skill-item {
     text-align: center;
     padding: 1.5rem;

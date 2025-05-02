@@ -63,10 +63,6 @@ const skillsData = {
     'Helm': {
         services: ['Charts', 'Releases', 'Templates', 'Values', 'Repositories'],
         description: 'Proficient in Helm package management for Kubernetes.'
-    },
-    'KEDA': {
-        services: ['Event-driven Autoscaling', 'Scalers', 'Metrics', 'Triggers', 'Custom Resources'],
-        description: 'Experience in KEDA autoscaling for Kubernetes.'
     }
 };
 
